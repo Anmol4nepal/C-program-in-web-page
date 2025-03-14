@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <title>control structures</title>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h1 {
+background-color: gray;
+
+    font-size: 2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+h2 {
+background-color: orange;
+
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+h3 {
+background-color: yellow;
+
+    font-size: 1em;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.output-box {
+    background-color: #e7f3e7;
+    border: 1px solid #4CAF50;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 1em;
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+</style>
+    </head>
+    <body>
+        <header>CONTROL STRUCTURES></header>
+        <h1>SEQUENCE CONTROL STRUCTURE</h1>
+        <p>#include&lt;stdio.h&gt;<br>
+
+            int main()<br>
+            {printf("HELLO WORLD");<br>
+            return 0;<br>
+            }<br>
+        </p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./image.png" alt=""><br></p>
+
+        <h1>SELECTION CONTROL STRUCTURE</h1>
+        <h3>if Statement</h3>
+        <p>
+ 	int main()<br>
+             {<br>
+            int x = 10;<br>
+            if (x > 5) {<br>
+                printf("x is greater than 5\n");<br>
+            }<br>
+            return 0;<br>
+             }<br>
+	</p>
+             <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./ifcs1.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./ifcs.png" alt=""><br></p>
+
+
+ 	<h3>if-else Statement</h3>
+			<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int num = -10;<br>
+    if (num > 0) {<br>
+        printf("Positive Number<br>\n");<br>
+    } else {<br>
+        printf("Negative Number or Zero<br>\n");<br>
+    }<br>
+    return 0;<br>
+}<br>
+</p>
+                    <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./ifcs1.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./ifelse.png" alt=""><br></p><br><br>
+
+
+<h3>if-elseif Statement</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int temp = 25;<br>
+
+    if (temp > 30) {<br>
+        printf("It's a hot day!<br>\n");<br>
+    } else if (temp > 20) {<br>
+        printf("It's a warm day.<br>\n");<br>
+    } else if (temp > 10) {<br>
+        printf("It's a cool day.<br>\n");<br>
+    }<br>
+
+    return 0;<br>
+}<br>
+</p>
+                    <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./ifcs1.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./ifelseif.png" alt=""><br></p><br><br>
+
+
+
+<h3>if-elseif-else Statement</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int num;<br>
+
+    printf("Enter a number: <br>\n");<br>
+    scanf("%d", &num);<br>
+
+    if (num > 0) {<br>
+        printf("The number is Positive.<br>\n");<br>
+    } else if (num < 0) {<br>
+        printf("The number is Negative.<br>\n");<br>
+    } else {<br>
+        printf("The number is Zero.<br>\n");<br>
+    }<br>
+
+    return 0;<br>
+}<br>
+
+</p>
+                    <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./ifcs1.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./ifelseifelse.png" alt=""><br></p><br><br><br>
+
+
+
+ <h1>LOOPING/ITERATION CONTROL STRUCTURE</h1>
+  <h3>for Loop</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    for (int i = 0; i < 5; i++) {<br>
+        printf("%d\n", i);<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./forloop.png" alt=""><br><br></p>
+
+
+ <h3>while Loop</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    for (int i = 0; i < 5; i++) {<br>
+        printf("%d\n");<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./forloop.png" alt=""><br><br></p>
+
+
+<h3>do-while Loop</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int i = 0;<br>
+    do {<br>
+        printf("%d\n");<br>
+        i++;<br>
+    } while (i < 5);<br>
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./forloop.png" alt=""><br><br><br><br></p>
+
+
+ <h1>JUMPING CONTROL STRUCTURE</h1>
+  <h3>goto</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int i = 1;<br>
+    
+    start:<br>
+    if (i > 5) {<br>
+        return 0;<br>
+    }<br>
+    printf("%d ", i);<br>
+    i++;<br>
+    goto start;<br>
+
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./goto.png" alt=""><br><br></p>
+
+
+ <h3>break</h3>
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    for (int i = 1; i <= 5; i++) {<br>
+        if (i == 3) {<br>
+            break;  <br>
+        }<br>
+        printf("%d ", i);<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./break.png" alt=""><br><br></p>
+
+
+
+
+
+<h1>SWITCH-CASE STATEMENT</h1>
+  
+<p>
+#include <stdio.h><br>
+
+int main() {<br>
+    int day = 3;<br>
+    switch (day) {<br>
+        case 1:<br>
+            printf("Monday\n");<br>
+            break;<br>
+        case 2:<br>
+            printf("Tuesday\n");<br>
+            break;<br>
+        case 3:<br>
+            printf("Wednesday\n");<br>
+            break;<br>
+        default:<br>
+            printf("Invalid Day\n");<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+</p>
+        <h2>OUTPUT </h2>
+        <p>Compilation Interface Messages<br>
+<img src="./seqcs.png" alt=""><br></p>
+<p> Code Execution in Console Interface<br>
+<img src="./switch.png" alt=""><br><br></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
