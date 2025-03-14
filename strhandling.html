@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> STRING HANDLING FUNCTIONS</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+background-color: yellow;
+    font-size: 36px;
+    margin: 0;
+}
+
+</style>
+</head>
+<body>
+<header>STRING HANDLING FUNCTIONS</header>
+<h1> CODE </h1>
+<p>
+#include <stdio.h><br>
+#include <string.h><br>
+
+#define pi 3.14<br>
+
+int main() {<br>
+    int i, j = 0;<br>
+    char x[100];<br>
+    char y[100];<br>
+    char w[100] = "apple";<br>
+    int a;<br>
+
+    printf("Enter a character: ");<br>
+    scanf("%s", x);<br>
+
+    strrev(x);<br>
+    printf("The reverse is %s\n", x);<br>
+
+    a = strlen(x);<br>
+    printf("The length of this is = %d\n", a);<br>
+
+    strrev(x);<br>
+    strupr(x);<br>
+    printf("The uppercase is %s\n", x);<br>
+
+    strlwr(x);<br>
+    printf("The lowercase is %s\n", x);<br>
+
+    strcpy(y, x);<br>
+    printf("The copied string is %s\n", y);<br>
+
+    if (strcmp(x, y) == 0) {<br>
+        printf("Identical strings\n");<br>
+    } else {<br>
+        printf("The strings aren't identical\n");<br>
+    }<br>
+
+    strcat(x, w);<br>
+    printf("Concatenated String: %s\n", x);<br>
+
+    return 0;<br>
+}<br>
+</p>
+<br><br>
+<h1>OUTPUT</h1>
+<img src="./strhnd.png">
+</body>
+</html>
